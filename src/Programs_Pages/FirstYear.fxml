@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="700.0" minWidth="585.0" prefHeight="543.0" prefWidth="585.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Programs_Pages.Programs_Controller">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="400.0" layoutY="464.0" onAction="#apply_FirstYear" prefHeight="53.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="APPLY" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND_ALT" size="27" />
+         </graphic>
+      </JFXButton>
+      <TextField alignment="CENTER" layoutX="91.0" layoutY="49.0" prefHeight="89.0" prefWidth="404.0" style="-fx-text-fill: WHITE; -fx-background-color: transparent;" text="FYE" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="90.0">
+         <font>
+            <Font name="Courier New" size="45.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Back_Programs_Main" text=" GO BACK" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" />
+         </graphic>
+      </JFXButton>
+      <JFXTextArea editable="false" layoutX="26.0" layoutY="147.0" prefHeight="296.0" prefWidth="533.0" style="-fx-text-fill: white;" text="The First Year Experience (FYE) program, offered through SMC Welcome Center, helps you make a smooth transition from high school to college, sort out your career and education goals, and create a plan of action to reach those goals.FYE will familiarize you with the SMC campus and its wide variety of student resources and programs (including Summer Bridge), and introduce you to a support network of students, faculty, and staff.Other FYE benefits during your first year at SMC include:Academic advising and options for a faster path to transfer;Enrollment assistance;Guaranteed enrollment in English and math classes;Early registration for other classes;Free tutoring and other support to help you improve your math, reading, writing, and study skills; andMeeting with counselors on a regular basis to follow up with college and career plans." unFocusColor="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <TextField layoutX="-316.0" layoutY="64.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

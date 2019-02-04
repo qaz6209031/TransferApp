@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="718.0" prefWidth="1000.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Programs_Main.Programes_Main_Controller">
+   <children>
+      <GridPane layoutX="50.0" layoutY="151.0" prefHeight="540.0" prefWidth="900.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="180.0" minHeight="180.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="180.0" minHeight="180.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="180.0" minHeight="180.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_DUAL_ENROLLMENT" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: WHITE;" text="DUAL ENROLLMENT" textAlignment="CENTER" textFill="#2d75eb" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#2d75eb" glyphName="TRANSGENDER_ALT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_FirstYear" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="FIRST YEAR EXPERIENCE" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="NUMERIC_1_BOX_OUTLINE" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_BLACK" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="BLACK COLLEGIANS " textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_DISABLE" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="DISABLED STUDENT SERVICES" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#2d75eb" glyphName="WHEELCHAIR" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_ADElANTE" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="ADELANTE" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#2d75eb" glyphName="ARROW_RIGHT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_SCHOLAR" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="SCHOLARS" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SKYPE" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="bt_EOPS" buttonType="RAISED" contentDisplay="TOP" onAction="#goto_EOPS" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="EOPS" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <graphic>
+                  <MaterialDesignIconView fill="#2d75eb" glyphName="EMOTICON_TONGUE" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_VETERAN" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="VETERANS’ RESOURCE " textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_MD" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_STEM" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="STEM" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#2d75eb" glyphName="SUBSCRIPT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_GLOBAL" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="GLOBAL CITIZENSHIP DEGREE" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GLOBE" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_INTERN" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="INTERNSHIP PROGRAM" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#2d75eb" glyphName="FACEBOOK_BOX" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_CMD" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="CENTER FOR MEDIA AND DESIGN" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOSPITAL_ALT" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_STUDY" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="STUDY ABROAD" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#2d75eb" glyphName="SPACE_SHUTTLE" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_MENTOR" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: WHITE; -fx-border-insets: 6; -fx-border-radius: 10;" text="MENTOR PROGRAMS IN THE ARTS" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="BRIGHTNESS_AUTO" size="30" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#goto_PROMO" prefHeight="180.0" prefWidth="180.0" style="-fx-border-color: #2D75EB; -fx-border-insets: 6; -fx-border-radius: 10; -fx-background-color: white;" text="PROMO PATHWAY" textAlignment="CENTER" textFill="#2d75eb" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fill="#2d75eb" glyphName="CAR" size="30" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Text fill="WHITE" layoutX="327.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMC PROGRAMES">
+         <font>
+            <Font name="Courier New Bold Italic" size="47.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="27.0" layoutY="64.0" onMouseClicked="#Programs_to_Main" size="50" />
+   </children>
+</AnchorPane>

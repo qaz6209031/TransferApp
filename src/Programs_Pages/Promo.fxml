@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="700.0" minWidth="585.0" prefHeight="543.0" prefWidth="585.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Programs_Pages.Programs_Controller">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="400.0" layoutY="464.0" onAction="#apply_Promo" prefHeight="53.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="APPLY" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND_ALT" size="27" />
+         </graphic>
+      </JFXButton>
+      <TextField alignment="CENTER" layoutX="31.0" layoutY="51.0" prefHeight="89.0" prefWidth="521.0" style="-fx-text-fill: WHITE; -fx-background-color: transparent;" text="PROMO PATHWAY" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="33.0">
+         <font>
+            <Font name="Courier New" size="45.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Back_Programs_Main" text=" GO BACK" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" />
+         </graphic>
+      </JFXButton>
+      <JFXTextArea editable="false" layoutX="26.0" layoutY="147.0" prefHeight="296.0" prefWidth="533.0" style="-fx-text-fill: white;" text="The Promo Pathway is an innovative partnership between Santa Monica College and the industry trade organization PromaxBDA, formed to increase diversity in the entertainment promotions workforce. The program provides students with the knowledge, skills, and professional relationships necessary for entry level employment in the Digital Media Industry. Students prepare for careers as writer/producer/editors of on-air promotions, commercial advertisements and public service announcements; and also for employment in related areas including social media marketing, media strategy and planning, public relations, publicity, advertising, and interactive media marketing. Students can complete both a Certificate of Achievement, and an Associate Degree in Entertainment Marketing/Promotion Production." unFocusColor="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <TextField layoutX="-316.0" layoutY="64.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

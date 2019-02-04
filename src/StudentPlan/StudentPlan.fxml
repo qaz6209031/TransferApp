@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentPlan.StudentPlanController">
+   <children>
+      <Pane fx:id="txt" layoutX="11.0" layoutY="4.0" prefHeight="590.0" prefWidth="500.0" style="-fx-background-color: #2D75EB;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="GRADUATION_CAP" layoutX="97.0" layoutY="192.0" size="50" />
+            <Label layoutX="194.0" layoutY="156.0" prefHeight="39.0" prefWidth="278.0" text="Course planner" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="29.0" layoutY="269.0" prefHeight="160.0" prefWidth="443.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <JFXTextField fx:id="txtcoursename" focusColor="#2d75eb" layoutX="17.0" layoutY="39.0" prefHeight="25.0" prefWidth="112.0" promptText="CS 56" unFocusColor="#2d75eb" />
+                  <Label layoutX="33.0" layoutY="2.0" prefHeight="26.0" prefWidth="81.0" text="Course Name" textAlignment="CENTER" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtunit" focusColor="#2d75eb" layoutX="147.0" layoutY="39.0" prefHeight="25.0" prefWidth="16.0" promptText="3" unFocusColor="#2d75eb" />
+                  <Label layoutX="142.0" layoutY="9.0" prefHeight="17.0" prefWidth="26.0" text="Unit" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtsemester" focusColor="#2d75eb" layoutX="190.0" layoutY="40.0" prefHeight="25.0" prefWidth="88.0" promptText="FALL2018" unFocusColor="#2d75eb" />
+                  <Label layoutX="193.0" layoutY="9.0" prefHeight="17.0" prefWidth="95.0" text="Semester" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtcoursename2" focusColor="#2d75eb" layoutX="14.0" layoutY="112.0" prefHeight="25.0" prefWidth="112.0" promptText="MATH 13" unFocusColor="#2d75eb" />
+                  <Label layoutX="33.0" layoutY="74.0" prefHeight="26.0" prefWidth="81.0" text="Course Name" textAlignment="CENTER" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="addbtn" contentDisplay="TOP" layoutX="326.0" layoutY="14.0" onAction="#addCourse" prefHeight="49.0" prefWidth="110.0" style="-fx-background-radius: 100px;" text="add course" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#2d75eb" glyphName="PLUS" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="removebtn" contentDisplay="TOP" layoutX="326.0" layoutY="100.0" onAction="#removeCourse" prefHeight="39.0" prefWidth="110.0" style="-fx-background-radius: 100px;" text="remove course" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#2d75eb" glyphName="MINUS" size="20" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutX="-13.0" layoutY="509.0" prefHeight="67.0" prefWidth="526.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Label fx:id="testlbl" layoutX="115.0" prefHeight="67.0" prefWidth="420.0" textAlignment="CENTER" textFill="#2d75eb">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <GridPane layoutX="525.0" layoutY="-1.0" prefHeight="721.0" prefWidth="799.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="305.0631612141927" minHeight="10.0" prefHeight="233.24811299641928" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="449.44146728515625" minHeight="10.0" prefHeight="242.75188700358072" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="652.7143783569336" minHeight="10.0" prefHeight="245.76248168945318" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="table1" prefHeight="36.0" prefWidth="41.0">
+              <columns>
+                <TableColumn fx:id="semester1Column" prefWidth="184.11138916015625" text="C1" />
+                  <TableColumn fx:id="unit1Column" prefWidth="62.20196533203125" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+              <columns>
+                <TableColumn fx:id="semester2Column" prefWidth="184.11151123046875" text="C1" />
+                  <TableColumn fx:id="unit2Column" prefWidth="62.0" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+              <columns>
+                <TableColumn fx:id="semester3Column" prefWidth="182.1253662109375" text="C1" />
+                  <TableColumn fx:id="unit3Column" prefWidth="63.208984375" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table4" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="semester4Column" prefWidth="200.0" text="C1" />
+                  <TableColumn fx:id="unit4Column" prefWidth="48.00006103515625" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="semester5Column" prefWidth="200.0" text="C1" />
+                  <TableColumn fx:id="unit5Column" minWidth="0.0" prefWidth="47.0" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="semester6Column" prefWidth="192.055908203125" text="C1" />
+                  <TableColumn fx:id="unit6Column" prefWidth="54.0" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table7" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn fx:id="semester7Column" prefWidth="192.0697021484375" text="C1" />
+                  <TableColumn fx:id="unit7Column" prefWidth="55.93035888671875" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn fx:id="semester8Column" prefWidth="191.71387231349945" text="C1" />
+                  <TableColumn fx:id="unit8Column" prefWidth="55.0" text="Unit" />
+              </columns>
+            </TableView>
+            <TableView fx:id="table9" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn fx:id="semester9Column" prefWidth="200.0" text="C1" />
+                  <TableColumn fx:id="unit9Column" prefWidth="47.0" text="Unit" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+      <JFXButton fx:id="backbtn" layoutY="660.0" onAction="#BackToMain" prefHeight="67.0" prefWidth="74.0" text=" " textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="50" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
