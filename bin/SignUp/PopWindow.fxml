@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="111.0" prefWidth="215.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.PopWindowController">
+   <children>
+      <JFXButton fx:id="backbtn" contentDisplay="TOP" onAction="#BackToLogin" prefHeight="111.0" prefWidth="216.0" style="-fx-background-color: #2D75EB;" text="Successful~" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="HAND_PEACE_ALT" size="80" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="348.0" prefWidth="654.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UC_CSU.UC_CSIU_Controller">
+   <children>
+      <FontAwesomeIconView fill="WHITE" glyphName="UNIVERSITY" layoutX="96.0" layoutY="226.0" size="100" />
+      <JFXButton fx:id="bt_back" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="14.0" onAction="#UC_CSU_back" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="40" />
+         </graphic></JFXButton>
+      <Text fill="WHITE" layoutX="115.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSU">
+         <font>
+            <Font name="MS Reference Sans Serif" size="34.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="110.0" layoutY="266.0" onAction="#APPLY_UC" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: WHITE;" text="APPLY" textFill="#2d75eb">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="317.0" prefHeight="364.0" prefWidth="337.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#2d75eb" layoutX="135.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UC">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="34.0" />
+               </font>
+            </Text>
+            <MaterialDesignIconView fill="#2d75eb" glyphName="CASTLE" layoutX="99.0" layoutY="224.0" size="115" />
+            <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="266.0" onAction="#APPLY_UC" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #2D75EB;" text="TAG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="266.0" onAction="#APPLY_UC" prefHeight="41.0" prefWidth="86.0" style="-fx-background-color: #2D75EB;" text="APPLY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

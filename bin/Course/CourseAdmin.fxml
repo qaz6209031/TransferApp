@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="814.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Course.CourseAdminController">
+    <children>
+  <Button fx:id="returnBack" layoutX="754.0" layoutY="498.0" mnemonicParsing="false" onAction="#returnBack" prefHeight="46.0" prefWidth="60.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="30" />
+         </graphic></Button>
+      <Pane layoutX="29.0" layoutY="6.0" prefHeight="532.0" prefWidth="339.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="37.0" layoutY="125.0" prefHeight="192.0" prefWidth="190.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="tfID" promptText="Course ID" />
+                  <TextField fx:id="tfTitle" promptText="Course Title" />
+                  <TextField fx:id="tfUnits" promptText="Course  Units" />
+                  <TextField fx:id="tfCourseType" promptText="Course Type" />
+                  <Button fx:id="addCourse" mnemonicParsing="false" onAction="#AddAction" text="Add Course" />
+               </children>
+            </VBox>
+            <Label layoutX="75.0" layoutY="47.0" prefHeight="46.0" prefWidth="249.0" text="Administrator" textFill="#2d75eb">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#2d75eb" glyphName="SLIDESHARE" layoutX="26.0" layoutY="83.0" size="40" />
+            <VBox layoutX="35.0" layoutY="336.0" prefHeight="70.0" prefWidth="196.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tfRemove" promptText="Course ID" />
+                  <Button fx:id="removeCourse" mnemonicParsing="false" onAction="#removeButtonAction" text="Remove Course" />
+               </children>
+            </VBox>
+            <Label fx:id="lblCheck" layoutX="35.0" layoutY="308.0" prefHeight="17.0" prefWidth="300.0" textFill="#ff4949">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </Pane>
+      <TableView fx:id="table" layoutX="375.0" layoutY="50.0" prefHeight="440.0" prefWidth="413.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="108.0" text="Course Name" />
+          <TableColumn fx:id="colTitle" prefWidth="129.33331298828125" text="Course Title" />
+            <TableColumn fx:id="colType" prefWidth="89.66668701171875" text="Major" />
+            <TableColumn fx:id="colUnits" prefWidth="99.33331298828125" text="Units" />
+        </columns>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </TableView>
+    </children>
+</AnchorPane>

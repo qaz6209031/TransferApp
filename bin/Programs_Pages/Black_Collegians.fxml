@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="700.0" minWidth="585.0" prefHeight="543.0" prefWidth="585.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Programs_Pages.Programs_Controller">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="400.0" layoutY="464.0" onAction="#apply_Black" prefHeight="53.0" prefWidth="151.0" style="-fx-background-color: transparent;" text="APPLY" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND_ALT" size="27" />
+         </graphic>
+      </JFXButton>
+      <TextField alignment="CENTER" layoutX="31.0" layoutY="51.0" prefHeight="89.0" prefWidth="521.0" style="-fx-text-fill: WHITE; -fx-background-color: transparent;" text="BLACK COLLEGIANS " AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="33.0">
+         <font>
+            <Font name="Courier New" size="45.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Back_Programs_Main" text=" GO BACK" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" />
+         </graphic>
+      </JFXButton>
+      <JFXTextArea editable="false" layoutX="26.0" layoutY="147.0" prefHeight="296.0" prefWidth="533.0" style="-fx-text-fill: white;" text="The Santa Monica College Black Collegians is an academic-transfer program that promotes academic excellence and guides students through the transfer process. Students are assisted in examining their options for transfer and in completing an educational plan which will lead to transferring to the institution of their choice.They are currently attending or have graduated from institutions such as Spelman College, Howard University, CSU Long Beach, USC, Stanford, UCLA, and the University of California, Berkeley.The special benefits that students receive from the Black Collegians Program include: a personal counselor who will support and guide students throughout their stay at SMC; a special “College Success” course that will help students strengthen skills to enhance academic success; innovative academic and personal growth forums; a mentor who will advise and direct; access to a network of supportive peers, teachers and staff members; scholastic recognition and monetary awards." unFocusColor="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Regular" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <TextField layoutX="-316.0" layoutY="64.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.octicons.OctIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="718.0" style="-fx-background-color: #2D75EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.MainController">
+   <children>
+      <AnchorPane layoutX="88.0" layoutY="191.0" prefHeight="216.0" prefWidth="543.0">
+         <children>
+            <GridPane layoutX="-3.0" prefHeight="216.0" prefWidth="543.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="studentbtn" buttonType="RAISED" contentDisplay="TOP" onAction="#Login" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #ef3939;" text="Students" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="bt_UC" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#goto_UCMain" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #52c42f;" text="UC/CSU" textFill="WHITE" GridPane.columnIndex="1">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BINOCULARS" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="191.0" layoutY="10.0" onAction="#goto_ProgramsMain" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #651fd4;" text="SMC programs" textFill="WHITE" GridPane.columnIndex="2">
+                     <graphic>
+                        <OctIconView fill="WHITE" glyphName="BOOK" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="coursebtn" buttonType="RAISED" contentDisplay="TOP" layoutX="372.0" layoutY="10.0" onAction="#openCourse" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #1eb3f3;" text="Courses" textFill="WHITE" GridPane.rowIndex="1">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GRADUATION_CAP" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="118.0" onAction="#goto_SearchPf" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #ffbb5c;" text="Faculty" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="50" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="TOP" onAction="#openCalender" prefHeight="143.0" prefWidth="224.0" style="-fx-background-color: #cdcccc;" text="Calender" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="50" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITE" glyphName="TH_LARGE" layoutX="39.0" layoutY="82.0" size="60" />
+      <Label layoutX="55.0" layoutY="83.0" prefHeight="17.0" prefWidth="66.0" text="TEAM2" textFill="WHITE">
+         <font>
+            <Font name="MS Gothic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_music" layoutX="7.0" layoutY="484.0" mnemonicParsing="false" onAction="#music" prefHeight="31.0" prefWidth="32.0" style="-fx-background-color: transparent;" text="||" textFill="WHITE" />
+   </children>
+</AnchorPane>
